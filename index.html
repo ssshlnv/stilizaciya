@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css">
+</head>
+<body>
+    <!-- 2.1 -->
+    <!-- <div id="myDiv"></div>
+    <button id="resizeButton">aaa</button> -->
+
+    <!-- 2.2 -->
+    <!-- <div id="elem" style="width: 300px; height: 200px;">
+        text
+    </div>
+    <button id="sizeButton">aaa</button> -->
+
+    <!-- 2.3 -->
+    <!-- <div id="elem" style="font-size: 1.5em;">text</div>
+    <button id="sizeButton">aaa</button> -->
+
+
+        <!-- #3.1
+    Ошибка в том, что добавляется число к строке. 
+    Свойство elem.style.fontSize возвращает строку, 
+    представляющую размер шрифта, например "16px". 
+    При попытке добавить число к этой строке мы получаем не сложение чисел. -->
+
+    <!-- #3.2
+    Ошибка в этом коде заключается в том, 
+    что при попытке увеличить размер шрифта 
+    на 2 пикселя используется parseInt(elem.style.fontSize + 2). 
+    Здесь elem.style.fontSize возвращает строку, 
+    представляющую размер шрифта, например "16px". 
+    При попытке добавить число к этой строке мы получаем не сложение чисел. -->
+
+    <!-- #3.3
+    Проблема в данном коде заключается в том, 
+    что elem.style.fontSize возвращает строку, 
+    представляющую размер шрифта, например "2.5em". 
+    При использовании parseInt для преобразования 
+    этой строки в число, результат будет 2, так 
+    как parseInt останавливается при обнаружении первого нечислового символа.
+    Затем происходит сложение числа 2 с результатом 
+    parseInt (т.е. 2) и строкой 'em', что не приводит к сложению чисел. -->
+
+    <!-- #3.4
+    <div id="elem" style="width: 300px; height: 
+	200px; border: 1px solid red;"> 
+	text
+    </div> -->
+    <!-- <button id="button">Кнопка</button> -->
+
+
+    <!-- 4 -->
+    <!-- <div id="elem">text</div>
+    <button id="borderButton">aaa</button> -->
+
+
+    <!-- #5.1
+    <div id="myDiv" style="display: block;">Это див</div>
+    <button id="hideButton">спрятать</button>
+    <button id="showButton">показать</button> -->
+
+    <!-- #5.2
+    <div id="myDiv" style="width: 100px; height: 100px; background-color: blue;">пумпумпум</div>
+    <button id="redButton">красный</button>
+    <button id="originalColorButton">исходный</button> -->
+
+
+    <!-- 6 -->
+    <!-- <div id="elem">text</div>
+    <button id="borderButton">aaa</button> -->
+
+
+    <!-- 8.1 -->
+    <!-- <div id="elem">Элемент</div>
+    <button id="sizeButton">aaa</button> -->
+
+    <!-- 8.2 -->
+    <!-- <div id="elem">Элемент</div>
+    <button id="sizeButton">aaa</button> -->
+
+
+    <!-- #9.1
+    <div id="elem" style="font-size: 2em;">пумупмупум</div>
+    <button id="fontSizeButton">размер шрифта</button> -->
+
+
+    <!-- 10 -->
+    <!-- <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p> -->
+
+
+    <!-- #11.1
+    <p class="paragraph">1</p>
+    <p class="paragraph">2</p> -->
+
+
+    <!-- 12 -->
+    <!-- <input type="text" id="inputField"> -->
+
+    <!-- #13.1
+    <input type="text" id="numberInput"> -->
+
+
+<script src="code.js"></script>    
+</body>
+</html>
